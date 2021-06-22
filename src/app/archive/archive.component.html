@@ -53,7 +53,9 @@
       aria-label="Close"
     ></button>
   </div>
+
   <div class="offcanvas-body">
+    <h3>search</h3>
     <div class="input-group mb-3">
       <input
       #search
@@ -62,9 +64,20 @@
         class="form-control"
         placeholder="Search into archives"
         aria-label="Search into archives"
-        aria-describedby="button-search-archives"
       />
     </div>
+
+    <div class="input-group mb-3">
+      <input
+      #searchQuery
+        (keyup)="searchArchivesQuery(searchQuery)"
+        type="text"
+        class="form-control"
+        placeholder="Search into archives (query version)"
+        aria-label="Search into archives  (query version)"
+      />
+    </div>
+
     <ul>
       <li *ngFor="let archive of archives">
         <a [routerLink]="['/archives', archive.id]">{{ archive.name }}</a>

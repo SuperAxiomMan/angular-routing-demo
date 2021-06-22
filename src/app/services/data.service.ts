@@ -36,7 +36,7 @@ export class DataService {
   searchEntities(searchTerms: string) {
     return this.http.get(this.url, {
       params: {
-        search: searchTerms,
+        q: searchTerms,
       },
     });
   }

@@ -27,6 +27,12 @@ export class ArchiveComponent implements OnInit {
     archive.name.includes(searchInput.value)
     );
   }
+
+  searchArchivesQuery(searchInput: HTMLInputElement){
+    this.ArchivesService.searchEntities(searchInput.value).subscribe((response) => {
+      this.archives = response as Array<Archive>;
+    })
+  }
 }
 
 export interface Archive {
