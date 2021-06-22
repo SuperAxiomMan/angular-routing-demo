@@ -33,6 +33,14 @@ export class DataService {
     return this.http.get(`${this.url}/${id}`);
   }
 
+  searchEntities(searchTerms: string) {
+    return this.http.get(this.url, {
+      params: {
+        search: searchTerms,
+      },
+    });
+  }
+
   handleError(error: HttpErrorResponse) {
     if (error.error instanceof ErrorEvent) {
       console.log('Error', error.error.message);

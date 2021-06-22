@@ -1,3 +1,5 @@
+
+
 <ul class="list-group w-25 text-center">
   <li class="list-group-item">
     <button
@@ -52,6 +54,17 @@
     ></button>
   </div>
   <div class="offcanvas-body">
+    <div class="input-group mb-3">
+      <input
+      #search
+        (keyup)="searchArchives(search)"
+        type="text"
+        class="form-control"
+        placeholder="Search into archives"
+        aria-label="Search into archives"
+        aria-describedby="button-search-archives"
+      />
+    </div>
     <ul>
       <li *ngFor="let archive of archives">
         <a [routerLink]="['/archives', archive.id]">{{ archive.name }}</a>
