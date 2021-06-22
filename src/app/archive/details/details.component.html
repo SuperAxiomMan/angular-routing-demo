@@ -1,0 +1,19 @@
+<h2>Archives from {{ archive.name }}</h2>
+
+<section>
+  <ul>
+    <li *ngFor="let folder of archive.folder">
+      <a href="#">{{ folder }}</a>
+    </li>
+  </ul>
+
+  <a [routerLink]="['/archives']"
+    ><button
+      class="btn btn-primary"
+      type="button"
+      aria-controls="offcanvasRight"
+    >
+      Back to the archives
+    </button></a
+  >
+</section>

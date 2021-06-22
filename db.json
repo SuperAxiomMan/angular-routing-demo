@@ -1,0 +1,34 @@
+{
+  "archives": [
+    {
+      "id": 1,
+      "name": "2020/1",
+      "folder": ["eau.txt","elec.txt"]
+    },
+    {
+      "id": 2,
+      "name": "2020/2",
+      "folder": ["bonjour.txt","aurevoir.txt"]
+    },
+    {
+      "id": 3,
+      "name": "2020/3",
+      "folder": ["pluie.txt","orage.txt"]
+    },
+    {
+      "id": 4,
+      "name": "2020/4",
+      "folder": ["banane.txt","raisin.txt"]
+    },
+    {
+      "id": 5,
+      "name": "2020/5",
+      "folder": ["chapeau.txt","melon.txt"]
+    },
+    {
+      "id": 6,
+      "name": "2020/6",
+      "folder": ["bowling.txt","golf.txt"]
+    }
+  ]
+}
